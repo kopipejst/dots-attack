@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Dots Attack</title>
+
+    <style>
+        html, body {
+            margin:  0;
+            padding:  0;
+            overflow: hidden;
+        }
+
+        .dot {
+            position: absolute;
+            background-color: #0099FF;
+            border-radius: 50%;
+            border:  3px solid;
+            cursor: crosshair;
+            box-shadow: 0px 0px 3px #333
+        }
+
+        #flood {
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            background-color: #0099FF;
+            border-top: 3px solid black;
+            height: 10px;
+        }
+
+        #score {
+            position: fixed;
+            padding: 0px 20px;
+            font-family: verdana;
+            bottom: 0px;
+            color: #FFF;
+        }
+
+        #message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            margin-left: -150px;
+            line-height: 40px;
+            font-size: 30px;
+            background-color: #FFFFFF;
+            display: none;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="flood"></div>
+<div id="score">0</div>
+<div id="message">DOTS ATTACK</div>
+
+<script src="dotsattack.js"></script>
+
+</body>
+</html>
